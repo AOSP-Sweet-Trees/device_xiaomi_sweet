@@ -14,6 +14,11 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_ENABLE_BLUR := true
+RISING_MAINTAINER := K R I S H N A
+
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
@@ -24,4 +29,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 BUILD_FINGERPRINT := Redmi/sweet_global/sweet:13/TKQ1.221013.002/V14.0.9.0.TKFMIXM:user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sweet_global-user 13 TKQ1.221013.002 V14.0.9.0.TKFMIXM release-keys"
+    PRIVATE_BUILD_DESC="sweet_global-user 13 TKQ1.221013.002 V14.0.9.0.TKFMIXM release-keys" \
+    RISING_CHIPSET="Snapdragon 732G" \
+    RISING_MAINTAINER="K R I S H N A"
