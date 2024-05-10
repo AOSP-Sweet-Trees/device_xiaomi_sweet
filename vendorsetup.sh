@@ -1,6 +1,6 @@
 # Common Device Tree
 rm -rf device/xiaomi/sm6150-common
-git clone -b UNO https://github.com/ProjectElixir-Devices/device_xiaomi_sm6150-common_sweet device/xiaomi/sm6150-common
+git clone -b pos https://github.com/AOSP-Sweet-Trees/device_xiaomi_sm6150-common device/xiaomi/sm6150-common
 
 # Vendor Tree
 rm -rf vendor/xiaomi
