@@ -12,6 +12,8 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/sweet
 
+PRODUCT_USE_SCUDO := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
