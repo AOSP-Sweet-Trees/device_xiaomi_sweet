@@ -12,17 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common Project Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common PixysOS stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
-# Elixir Officials
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-ELIXIR_BUILD_TYPE := OFFICIAL
-TARGET_CALL_RECORDING_SUPPORTED := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := aosp_sweet
+# PixysOS Properties
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_OEM_CAMERA := true
+
+PRODUCT_NAME := pixys_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
