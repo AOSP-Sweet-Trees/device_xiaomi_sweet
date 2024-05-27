@@ -18,6 +18,18 @@ git clone https://github.com/PixelOS-AOSP/hardware_xiaomi hardware/xiaomi
 rm -rf kernel/xiaomi
 git clone --depth=1 https://github.com/pure-soul-kk/kernel_xiaomi_sm6150 kernel/xiaomi/sm6150
 
+rm -rf hardware/pixys/interfaces
+git clone https://github.com/AOSP-Sweet-Trees/hardware_pixys_interfaces hardware/pixys/interfaces
+
+rm -rf hardware/qcom-caf/common
+git clone https://github.com/AOSP-Sweet-Trees/hardware_qcom-caf_common hardware/qcom-caf/common
+
+rm -rf frameworks/native
+git clone --depth=1 https://github.com/AOSP-Sweet-Trees/frameworks_native frameworks/native
+
+rm -rf build/soong
+git clone https://github.com/AOSP-Sweet-Trees/build_soong build/soong
+
 rm -rf packages/modules/Bluetooth
 git clone --depth=1 https://github.com/AOSP-Sweet-Trees/packages_modules_Bluetooth packages/modules/Bluetooth
 
@@ -34,7 +46,7 @@ rm -rf vendor/pixys
 git clone --depth=1 https://github.com/AOSP-Sweet-Trees/vendor_pixys vendor/pixys
 
 rm -rf device/pixys/sepolicy
-git clone https://github.com/AOSP-Sweet-Trees/device_pixys_sepolicy device/pixys/sepolicy
+git clone -b lineage-21.0 https://github.com/AOSP-Sweet-Trees/device_pixys_sepolicy device/pixys/sepolicy
 
 rm -rf packages/apps/GameSpace
 git clone https://github.com/AOSP-Sweet-Trees/packages_apps_GameSpace packages/apps/GameSpace
