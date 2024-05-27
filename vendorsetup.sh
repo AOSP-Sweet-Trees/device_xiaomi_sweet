@@ -12,7 +12,7 @@ git clone --depth=1 https://github.com/pure-soul-kk/vendor_xiaomi_sweet-miuicame
 
 # Xiaomi Hardware
 rm -rf hardware/xiaomi
-git clone https://github.com/ProjectElixir-Devices/hardware_xiaomi hardware/xiaomi
+git clone https://github.com/PixelOS-AOSP/hardware_xiaomi hardware/xiaomi
 
 # Kernel Tree
 rm -rf kernel/xiaomi
